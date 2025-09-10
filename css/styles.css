@@ -166,6 +166,7 @@ nav ul li a:hover {
     font-size: 2.5em;
     color: #222;
     margin: 20px 0;
+    text-align:left;
 }
 
 .aboutme-text{
@@ -202,6 +203,10 @@ footer {
     max-width: 750px;
     margin:0 auto;
     text-align:justify;
+}
+
+.contenido-principal h2 {
+    text-align: left;
 }
 
 .info-personal {
