@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Margalejo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">  <!-- Libreria para iconos linkedin y github -->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -12,8 +13,11 @@
     <!-- Navegación -->
     <nav>
         <div>
+            <div class="name-hamb">
             <p><span>David Margalejo</span></p>
-            <ul>
+            <button class="hamburger" id="hamburguer">&#9776;</button>
+            </div>
+            <ul id="nav-menu">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="resume.html">Curriculum</a></li>
                 <li><a href="projects.html">Proyectos</a></li>
@@ -65,6 +69,13 @@
     </footer>
 
     <!-- JS personalizado -->
-    <script src="js/scripts.js"></script>
+    <script>
+        const hamburguer=document.getElementById('hamburguer');
+        const navMenu=document.getElementById('nav-menu');
+
+        hamburguer.addEventListener('click', ()=>{
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

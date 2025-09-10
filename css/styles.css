@@ -57,6 +57,15 @@ nav ul li a:hover {
     color: #e0e0e0;
 }
 
+.hamburger {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
 /*estilos menu y foto*/
 .header-container {
     padding: 60px 30px;
@@ -166,7 +175,7 @@ nav ul li a:hover {
 }
 
 .aboutme-links a {
-    margin:0,90px;
+    margin:6px;
     font-size:30px;
     color:#0044cc;
     transition: color 0.3s;
@@ -340,4 +349,155 @@ footer {
 .proyecto.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+
+
+/* MEDIA QUERY PARA DISPOSITIVOS MÓVILES */
+@media screen and (max-width: 768px) {
+
+
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        position:relative;
+        z-index:10;
+    }
+
+    nav > div {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    nav p {
+        font-size: 1rem;
+        padding-left: 0;
+    }
+
+    nav ul {
+        position:absolute;
+        margin-top:60px;
+        right:0;
+        left:auto;
+        background: linear-gradient(to right, #0044cc, #66a3ff);
+        z-index: 1000;
+        display:none;
+        flex-direction: column;
+        padding: 25px 20px;
+        border-bottom-left-radius:8px;
+    }
+
+        nav ul.active {
+        display: flex;
+    }
+
+    nav ul li{
+        width:100%;
+        margin-bottom: 6px;
+    }
+
+    nav ul li a {
+        display:block;
+        width:100%;
+    }
+
+        nav ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .name-hamb {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .header-container {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .header-content {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .header-content h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .header-content p {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .header-content a {
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+        width: fit-content;
+    }
+
+    .header-image {
+        max-width: 70%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-image img {
+        max-width: 55%;
+        margin: 0 auto;
+    }
+
+    .aboutme-container,
+    .contenido-principal,
+    .contenedor-proyectos {
+        padding: 0 15px;
+    }
+
+    .info-personal {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .text-info-personal {
+        padding-left: 0;
+    }
+
+    .img-info-personal img {
+        max-width: 80%;
+    }
+
+    .proyectos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proyecto {
+        width: 90%;
+    }
+
+    .proyecto img {
+        width: 100%;
+        height: auto;
+    }
+
+    .proyecto-enlaces {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #tabla-idiomas {
+        font-size: 0.85em;
+    }
 }

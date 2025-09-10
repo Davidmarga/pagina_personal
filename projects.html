@@ -10,17 +10,20 @@
 <body>
 
     <!-- Navegación -->
-<nav>
-    <div>
-        <p><span>David Margalejo</span></p>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="resume.html">Curriculum</a></li>
-            <li><a href="projects.html">Proyectos</a></li>
-            <li><a href="contact.html">Carta de presentación</a></li>
-        </ul>
-    </div>
-</nav>
+    <nav>
+        <div>
+            <div class="name-hamb">
+            <p><span>David Margalejo</span></p>
+            <button class="hamburger" id="hamburguer">&#9776;</button>
+            </div>
+            <ul id="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="resume.html">Curriculum</a></li>
+                <li><a href="projects.html">Proyectos</a></li>
+                <li><a href="contact.html">Carta de presentacion</a></li>
+            </ul>
+        </div>
+    </nav>
 
 <!-- Sección de Proyectos -->
 
@@ -187,7 +190,16 @@
          <span style="visibility: hidden;">.</span>
     </footer>
 
-    <!-- JS personalizado -->
-    <script src="js/scripts.js"></script>
+        <!-- JS  -->
+      <script>
+        const hamburguer=document.getElementById('hamburguer');
+        const navMenu=document.getElementById('nav-menu');
+
+        hamburguer.addEventListener('click', ()=>{
+            navMenu.classList.toggle('active');
+        });
+        
+    </script>
+
 </body>
 </html>
