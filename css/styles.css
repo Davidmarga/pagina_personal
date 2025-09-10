@@ -505,5 +505,7 @@ footer {
     #tabla-idiomas {
         width: 100%;
         font-size: 0.85em;
+        overflow-x: auto;
+        box-sizing: border-box;
     }
 }
