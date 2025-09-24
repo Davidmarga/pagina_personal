@@ -31,9 +31,19 @@
 
 <div class="contenedor-proyectos">  
     <h1>Proyectos</h1>
+    <h4>
+        <p>Aquí encontraras algunos de los proyectos en los que estoy trabajando para aprender, o he trabajado durante mi formación.  He intentado poner proyectos que utilicen deferentes tecnologías, como una muestra de todo lo que he ido aprendiendo.</p>
+       
+        <p>Algunos de los proyectos están desplegados, otros no debido a que las paginas gratuitas para desplegar servidores Node, Laravel, etc, “apagan” los servidores si pasan un periodo de inactividad, y es posible que no funcionen correctamente</p>
+       <p> En cualquier caso, en todos los proyectos esta el enlace al repositorio de Github para poder echar un vistazo al código, y en algunos por si acaso he grabado un video con su funcionamiento.</p>
+</h4>
 
-    <div class="proyectos">
-          
+    <div class="proyectos">   
+         <div id="modal">
+            <span id="close">&times;</span>
+            <video id="video" controls></video>
+        </div>
+
     <!-- Proyecto 1 -->
     <div class="proyecto"> 
         <h2>Lista de montañas rusas</h2>
@@ -45,7 +55,8 @@
         <p>Además, puede visualizar y filtrar su lista personalizada con información adicional obtenida dinámicamente desde la API.</p>            
         <div class="proyecto-enlaces"> 
             <a href="https://davidmargalejo.infinityfreeapp.com/">Enlace al proyecto</a><br><br>
-            <a href="https://github.com/Davidmarga/PROYECTOS_PERSONALES/tree/f84c2bd463e5cdceeb2c857f62693b18c7e504e4/APICOASTERS">Enlace al repositorio de GitHub</a>
+            <a href="https://github.com/Davidmarga/PROYECTOS_PERSONALES/tree/f84c2bd463e5cdceeb2c857f62693b18c7e504e4/APICOASTERS">Enlace al repositorio</a>
+            <button class="videobutton" data-video="assets/videos/apicoasters.mp4">Ver video </button>
         </div>
     </div>
 
@@ -60,7 +71,8 @@
         <p>Ademas se puede navegar entre diferentes Pokemon pulsando sus nombres y el programa realiza consultas a la api sobre sus datos y los muestra al usuario</p>  
         <div class="proyecto-enlaces"> 
             <a href="https://davidmarga.github.io/pokeapi/">Enlace al proyecto</a><br><br>
-            <a href="https://github.com/Davidmarga/PROYECTOS_PERSONALES/tree/f84c2bd463e5cdceeb2c857f62693b18c7e504e4/PRUEBA_POKEAPI">Enlace al repositorio de GitHub</a>
+            <a href="https://github.com/Davidmarga/PROYECTOS_PERSONALES/tree/f84c2bd463e5cdceeb2c857f62693b18c7e504e4/PRUEBA_POKEAPI">Enlace al repositorio</a>
+            <button class="videobutton" data-video="assets/videos/pokeapi.mp4">Ver video </button>
         </div>
     </div>
 
@@ -69,12 +81,13 @@
         <div class="proyecto"> 
         <h2>Agenda</h2>
         <img src="assets/proyectos/agenda.jpg" alt="Agenda" />
-        <p>Version mas sencilla de la anterior aplicacion, consistente tambien en una lista de tareas que se almacena en una base de datos.</p>
-        <p>El usuario puede ver sus tareas, eliminarlas, ediatrlas o marcarlas como completadas. A diferente de la anterior, en este caso solo puede utilizarla un unico usuario</p>
+        <p>Proyecto tipico de agenda para almacenar una lista de tareas en la base de datos.</p>
+        <p>El usuario puede crear una nueva tarea, ver sus tareas, eliminarlas, ediatrlas o marcarlas como completadas. Tambien incluye un filtro de tareas</p>
         <p>El backend esta hecho en php, almacena los datos en una base de datos Sql, y el frontend para practicar lo he hecho con Javascript</p>
         <div class="proyecto-enlaces"> 
             <a href="https://davidmarga.github.io/agenda/">Enlace al proyecto</a><br><br>
-            <a href="https://github.com/Davidmarga/PROYECTOS_PERSONALES/tree/f84c2bd463e5cdceeb2c857f62693b18c7e504e4/AGENDA">Enlace al repositorio de GitHub</a>
+            <a href="https://github.com/Davidmarga/PROYECTOS_PERSONALES/tree/f84c2bd463e5cdceeb2c857f62693b18c7e504e4/AGENDA">Enlace al repositorio</a>
+            <button class="videobutton" data-video="assets/videos/tareas.mp4">Ver video </button>
         </div>
     </div>
 
@@ -88,7 +101,8 @@
         <p>Aplicación realizada integramente en Javascript para simular un juego de piedra papel o tijera. El usuario puede elegir cuantas partidas quiere jugar, y tras seleccionar su jugada, se compara el resultado con la jugada aleatoria del programa. Se devuelve al usuario si ha ganado o perdido y el numero de partidas que le quedan. </p>            
         <div class="proyecto-enlaces"> 
             <a href="https://davidmarga.github.io/rps/">Enlace al proyecto</a><br><br>
-            <a href="https://github.com/Davidmarga/PROYECTOS_PERSONALES/tree/f84c2bd463e5cdceeb2c857f62693b18c7e504e4/JUEGO_PIEDRA_PAPEL_TIJERA">Enlace al repositorio de GitHub</a>
+            <a href="https://github.com/Davidmarga/PROYECTOS_PERSONALES/tree/f84c2bd463e5cdceeb2c857f62693b18c7e504e4/JUEGO_PIEDRA_PAPEL_TIJERA">Enlace al repositorio</a>
+            <button class="videobutton" data-video="assets/videos/rps.mp4">Ver video </button>
         </div>
     </div>
 
@@ -101,7 +115,8 @@
         <p>El cliente puede seleccionar lo que desea pedir y la cantidad de cada uno de los platos. Por ultimo se le muestra un listado con todos sus pedidos, y el precio total de todo lo que ha seleccionado </p>            
         <div class="proyecto-enlaces"> 
             <a href="https://davidmarga.github.io/restaurante/">Enlace al proyecto</a><br><br>
-            <a href="https://github.com/Davidmarga/PROYECTOS_PERSONALES/tree/f84c2bd463e5cdceeb2c857f62693b18c7e504e4/RESTAURANTE">Enlace al repositorio de GitHub</a>
+            <a href="https://github.com/Davidmarga/PROYECTOS_PERSONALES/tree/f84c2bd463e5cdceeb2c857f62693b18c7e504e4/RESTAURANTE">Enlace al repositorio</a>
+             <button class="videobutton" data-video="assets/videos/restaurante.mp4">Ver video </button>
         </div>
     </div>
 
@@ -111,10 +126,11 @@
         <div class="proyecto"> 
         <h2>Generador aleatorio nombres</h2>
         <img src="assets/proyectos/node.jpg" alt="Node" />
-        <p>Aplicación muy sencilla en Node.Js y express. El servidor tiene un array con varios nombres almacenados, y el frontend, al pulsar un boton, realiza una consulta a traves de una api y devuelve uno de los nombres aleatorios</p>
-        <p>No pongo el enlace a la aplicacion porque el servidor en Node.js esta desplegado en un servidor gratuito de Render, que si no se usa lo duerme, por lo que al entrar al proyecto, lo primero que genera es un error. Funciona en local y funcionaria si el servidor de Node estuviera desplegado en otro tipo de servidor de pago</p>
+        <p>Aplicación muy sencilla en Node.Js y express. El servidor tiene un array con varios nombres almacenados, y el frontend, al pulsar un boton, realiza una consulta a traves de una api al servidor node y este devuelve uno de los nombres aleatorios</p>
+        <p>No pongo el enlace a la aplicacion porque el servidor en Node.js esta desplegado en un servidor gratuito de Render, que si no se usa lo desactiva.</p>
         <div class="proyecto-enlaces"> 
-            <a href="https://github.com/Davidmarga/PROYECTOS_PERSONALES/tree/f84c2bd463e5cdceeb2c857f62693b18c7e504e4/INICIO_NODE">Enlace al repositorio de GitHub</a>
+            <a href="https://github.com/Davidmarga/PROYECTOS_PERSONALES/tree/f84c2bd463e5cdceeb2c857f62693b18c7e504e4/INICIO_NODE">Enlace al repositorio</a>
+            <button class="videobutton" data-video="assets/videos/node.mp4">Ver video </button>
         </div>
     </div>
 
@@ -128,7 +144,7 @@
         <p>Al igual que la otra aplicacion en laravel, por problemas con los sitios de hosting gratuitos, que suspenden los servicios de react y de laravel, no lo he desplegado, pero dejo el enlace al repositorio de github</p>
         <div class="proyecto-enlaces"> 
             <!-- <a href="C:\xampp\htdocs\PROYECTOS_PERSONALES\LARAVEL/frontend_js/index.html">Enlace al proyecto</a><br><br> -->
-            <a href="https://github.com/Davidmarga/PROYECTOS_PERSONALES/tree/f84c2bd463e5cdceeb2c857f62693b18c7e504e4/LARAVEL">Enlace al repositorio de GitHub</a>
+            <a href="https://github.com/Davidmarga/PROYECTOS_PERSONALES/tree/f84c2bd463e5cdceeb2c857f62693b18c7e504e4/LARAVEL">Enlace al repositorio</a>
         </div>
     </div>
     
@@ -145,7 +161,8 @@
         <p>No tengo el proyecto desplegado, ya que la mayoria de sitios donde alojar el backend en laravel, solo me dejaban tenerlo durante un mes y luego lo apagan, pero dejo el enlace al repositorio de github</p>
         <div class="proyecto-enlaces"> 
            <!-- <a href="C:\xampp\htdocs\PROYECTOS_PERSONALES\LARAVEL2_COLEGIO_NOTAS/frontend-react/public/index.html/index.html">Enlace al proyecto</a><br><br> -->
-            <a href="https://github.com/Davidmarga/PROYECTOS_PERSONALES/tree/f84c2bd463e5cdceeb2c857f62693b18c7e504e4/LARAVEL2_COLEGIO_NOTAS">Enlace al repositorio de GitHub</a>
+            <a href="https://github.com/Davidmarga/PROYECTOS_PERSONALES/tree/f84c2bd463e5cdceeb2c857f62693b18c7e504e4/LARAVEL2_COLEGIO_NOTAS">Enlace al repositorio</a>
+            <button class="videobutton" data-video="assets/videos/colegio.mp4">Ver video </button>
         </div>
     </div>
 
@@ -159,25 +176,27 @@
         <p>La base de datos, con la que se interactua a traves de los metodos de Jpa, se crea desde el proyecto y es una base de datos Sql para poder persistir los datos una vez cerrada la aplicacion</p>
         <div class="proyecto-enlaces"> 
            <!-- <a href="C:\xampp\htdocs\PROYECTOS_PERSONALES\LARAVEL2_COLEGIO_NOTAS/frontend-react/public/index.html/index.html">Enlace al proyecto</a><br><br> -->
-            <a href="https://github.com/Davidmarga/PROYECTOS_PERSONALES/tree/a977c55a3aebc1ee72ecd09781628d6d9fd29feb/tiendaspringboot2">Enlace al repositorio de GitHub</a>
+            <a href="https://github.com/Davidmarga/PROYECTOS_PERSONALES/tree/a977c55a3aebc1ee72ecd09781628d6d9fd29feb/tiendaspringboot2">Enlace al repositorio</a>
+            <button class="videobutton" data-video="assets/videos/springboot2.mp4">Ver video </button>
         </div>
+    </div>
 
                                 <!-- Proyecto 9 -->
     <div class="proyecto"> 
         <h2>Sistema de gestion de tienda usuarios y administradores</h2>
         <img src="assets/proyectos/springboot.png" alt="springboot" />
-        <p>Proyecto mucho mas completo que el anterior que he desarrollado completamente en springboot, es una tienda en la que pueden iniciar sesion usuarios tanto usuaros como administradores.</p>
+        <p>Proyecto todavia en desarrollo mucho mas completo que el anterior que he desarrollado completamente en springboot, es una tienda en la que pueden iniciar sesion usuarios tanto usuaros como administradores.</p>
        <p> Las vistas y las rutas a las que pueden acceder los usuarios y los administradores son diferentes, esto esta gestionado con Spring Security.</p>
         <p>Por practicar a hacer un proyecto solamente con springboot, las vistas estan hechas con Thymeleaf, y la base de datos es una base de datos Mysql creada desde el propio Spring mediante las entidades</p>
-        <p>Tambien he practicado el uso de objetosDTO para el inicio de sesion y otras clases auxiliares, como el carrito que se guarda en la sesion, que no se almacenan en la base de datos, pero se utilizan para el desarrollo del proyecto</p>
+        <p>Tambien he practicado el uso de objetosDTO para el inicio de sesion y otras clases auxiliares, como el carrito que se guarda en la sesion de cada cliente, pero no se almacenan en la base de datos.</p>
         <div class="proyecto-enlaces"> 
            <!-- <a href="C:\xampp\htdocs\PROYECTOS_PERSONALES\LARAVEL2_COLEGIO_NOTAS/frontend-react/public/index.html/index.html">Enlace al proyecto</a><br><br> -->
-            <a href="https://github.com/Davidmarga/PROYECTOS_PERSONALES/tree/b42cab74fc3fe2a414d92ae2a63a9971c1004128/tiendaspringboot3-sinTerminar/tienda">Enlace al repositorio de GitHub</a>
+            <a href="https://github.com/Davidmarga/PROYECTOS_PERSONALES/tree/b42cab74fc3fe2a414d92ae2a63a9971c1004128/tiendaspringboot3-sinTerminar/tienda">Enlace al repositorio</a>
         </div>
 
-    </div>
-
+ </div>
 </div>
+
 </div>
 
 <script>
@@ -197,6 +216,34 @@
 
     window.addEventListener('scroll', mostrarProyectos);
     window.addEventListener('load', mostrarProyectos);
+
+    const modal = document.getElementById('modal');
+    const video = document.getElementById('video');
+    const closeBtn = document.getElementById('close');
+
+    const buttons = document.querySelectorAll('button[data-video]');
+    buttons.forEach(btn =>{
+        btn.addEventListener('click',()=>{
+            const videoSrc = btn.getAttribute('data-video');
+            video.src = videoSrc;
+            video.currentTime=0;
+            modal.style.display='flex';
+            video.play();
+        });
+    });
+
+    closeBtn.addEventListener('click',()=>{
+        video.pause();
+        video.src='';
+        modal.style.display = 'none';
+    });
+
+    video.addEventListener('ended',()=>{
+         modal.style.display = 'none';
+        video.pause();
+        video.src='';
+    });
+
 </script>
 
 
