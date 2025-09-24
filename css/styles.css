@@ -593,6 +593,32 @@ footer {
     .aboutme-container {
     padding: 16px 30px; 
     }
+    #modal {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: none;
+        border-radius: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0,0,0,0.85);
+    }
+
+    #video {
+        width: 95%;       /* ocupa casi todo el ancho */
+        height: auto;     /* mantiene proporción */
+        max-height: 85%;  /* asegura que se vean controles */
+    }
+
+    #close {
+        top: 15px;
+        right: 20px;
+    }
+
+
+
  }
 
 
