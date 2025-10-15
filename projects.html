@@ -33,10 +33,24 @@
     <h1>Proyectos</h1>
     <h4>
         <p>Aquí encontraras algunos de los proyectos en los que estoy trabajando para aprender, o he trabajado durante mi formación.  He intentado poner proyectos que utilicen deferentes tecnologías, como una muestra de todo lo que he ido aprendiendo.</p>
-       
         <p>Algunos de los proyectos están desplegados, otros no debido a que las paginas gratuitas para desplegar servidores Node, Laravel, etc, “apagan” los servidores si pasan un periodo de inactividad, y es posible que no funcionen correctamente</p>
        <p> En cualquier caso, en todos los proyectos esta el enlace al repositorio de Github para poder echar un vistazo al código, y en algunos por si acaso he grabado un video con su funcionamiento.</p>
 </h4>
+
+<div class="filtro-lenguaje">
+    <label for="filtro">Filtrar proyectos por lenguaje de programació</label>
+    <select id="filtro">
+        <option value="todos">Todos</option>
+        <option value="javascript">JavaScript</option>
+        <option value="php">Php</option>
+        <option value="react">React</option>
+        <option value="bootstrap">Bootstrap</option>
+        <option value="nodejs">NodeJs</option>
+        <option value="springboot">Springboot</option>
+        <option value="laravel">Laravel</option>
+        <option value="thymeleaf">Thymeleaf</option>
+    </select>
+</div>
 
     <div class="proyectos">   
          <div id="modal">
@@ -45,7 +59,7 @@
         </div>
 
     <!-- Proyecto 1 -->
-    <div class="proyecto"> 
+    <div class="proyecto php javascript nodejs "> 
         <h2>Lista de montañas rusas</h2>
         <img src="assets/proyectos/apicoasters.jpg" alt="Apicoasters" />
         <p>Aplicación web que obtiene una lista de montañas rusas desde la API de Captain Coaster.</p>
@@ -62,7 +76,7 @@
 
 
         <!-- Proyecto 2 -->
-    <div class="proyecto"> 
+    <div class="proyecto javascript"> 
         <h2>Consultas Pokeapi</h2>
         <img src="assets/proyectos/pokeapi.jpg" alt="Pokeapi" />
         <p>Aplicacion para practicar realizando consultas a la Api mediante Javascript.</p>
@@ -78,12 +92,12 @@
 
      <!-- Proyecto 3 -->
 
-        <div class="proyecto"> 
+        <div class="proyecto javascript"> 
         <h2>Agenda</h2>
         <img src="assets/proyectos/agenda.jpg" alt="Agenda" />
-        <p>Proyecto tipico de agenda para almacenar una lista de tareas en la base de datos.</p>
+        <p>Proyecto tipico de agenda para almacenar una lista de tareas en la base de datos, o como es el caso, en localstorage.</p>
         <p>El usuario puede crear una nueva tarea, ver sus tareas, eliminarlas, ediatrlas o marcarlas como completadas. Tambien incluye un filtro de tareas</p>
-        <p>El backend esta hecho en php, almacena los datos en una base de datos Sql, y el frontend para practicar lo he hecho con Javascript</p>
+        <p>El frontend para practicar lo he hecho con Javascript</p>
         <div class="proyecto-enlaces"> 
             <a href="https://davidmarga.github.io/agenda/">Enlace al proyecto</a>
             <a href="https://github.com/Davidmarga/PROYECTOS_PERSONALES/tree/f84c2bd463e5cdceeb2c857f62693b18c7e504e4/AGENDA">Enlace al repositorio</a>
@@ -95,7 +109,7 @@
 
      <!-- Proyecto 4 -->
 
-        <div class="proyecto"> 
+        <div class="proyecto javascript"> 
         <h2>Juego piedra papel tijera</h2>
         <img src="assets/proyectos/rps.png" alt="rps" />
         <p>Aplicación realizada integramente en Javascript para simular un juego de piedra papel o tijera. El usuario puede elegir cuantas partidas quiere jugar, y tras seleccionar su jugada, se compara el resultado con la jugada aleatoria del programa. Se devuelve al usuario si ha ganado o perdido y el numero de partidas que le quedan. </p>            
@@ -108,7 +122,7 @@
 
          <!-- Proyecto 5 -->
 
-    <div class="proyecto"> 
+    <div class="proyecto javascript"> 
         <h2>Carta restaurante</h2>
         <img src="assets/proyectos/restaurante.jpg" alt="restaurante" />
         <p>Aplicación realizada en PHP y Javascript. Carga una lista de platos del menu de un restaurante y los muestra al cliente junto con su precio.</p>
@@ -123,7 +137,7 @@
 
      <!-- Proyecto 6 -->
 
-        <div class="proyecto"> 
+        <div class="proyecto nodejs"> 
         <h2>Generador aleatorio nombres</h2>
         <img src="assets/proyectos/node.jpg" alt="Node" />
         <p>Aplicación muy sencilla en Node.Js y express. El servidor tiene un array con varios nombres almacenados, y el frontend, al pulsar un boton, realiza una consulta a traves de una api al servidor node y este devuelve uno de los nombres aleatorios</p>
@@ -134,23 +148,25 @@
         </div>
     </div>
 
-                   <!-- Proyecto 7 -->
-    <div class="proyecto"> 
-        <h2>Laravel ToDoList</h2>
-        <img src="assets/proyectos/todolist.jpg" alt="Todolist" />
-        <p>Aplicacion, consistente en una lista de tareas que se almacena en una base de datos.</p>
-        <p>El backend esta hecho en Laravel, almacena los datos en una base de datos Sql, y el frontend para practicar lo he hecho en React</p>
-        <p>Permite al usuario iniciar sesion, ver sus tareas, eliminarlas editarlas, o marcarlas como completadas. Al lado de cada tarea, aparece el usuario al que pertenece, cada usuario puede gestionar unicamente sus tareas</p>
-        <p>Al igual que la otra aplicacion en laravel, por problemas con los sitios de hosting gratuitos, que suspenden los servicios de react y de laravel, no lo he desplegado, pero dejo el enlace al repositorio de github</p>
+
+    
+        <!-- Proyecto 7 -->
+    <div class="proyecto laravel javascript"> 
+        <h2>Lista con etiquetas arrastrables</h2>
+        <img src="assets/proyectos/draggable.png" alt="draggable" />
+        <p>Version parecida a la aplicación anterior en la que tenía un listado de montañas rusas, pero en este caso, en vez de traer los datos de una Api, estan guardados en una base de datos con la que se interactua a traves de un backend programado en Laravel.</p>
+        <p>Con Sanctum he definido dos tipos de usuarios, usuario y administrador, mientras que los administradores pueden añadir nuevos objetos a la base de datos mediante un formulario, cambiar el orden simplemente arrastrando tarjetas, modificar, eliminar datos etc, los usuario solamente pueden añadir estos objetos que han creado los administradores a su lista personal.</p>
+        <p>Las montañas rusas estan almacenadas en una tabla de la base de datos, los usuarios en otra, y como su relacion es muchos a muchos, ambas tablase estan relacionadas mediante una tabla intermedia. Asi los usuarios pueden puedan consular los datos, pero no modificarlos.</p>
+        <p>Al igual que en la anterior version, existen diferetnes filtros y clasificaciones que los usuarios o administradores pueden utilizar para ver la informacion de forma mucho mas clara y ordenada.</p>           
         <div class="proyecto-enlaces"> 
-            <!-- <a href="C:\xampp\htdocs\PROYECTOS_PERSONALES\LARAVEL/frontend_js/index.html">Enlace al proyecto</a><br><br> -->
-            <a href="https://github.com/Davidmarga/PROYECTOS_PERSONALES/tree/f84c2bd463e5cdceeb2c857f62693b18c7e504e4/LARAVEL">Enlace al repositorio</a>
+            <a href="https://github.com/Davidmarga/PROYECTOS_PERSONALES/tree/11670417fbbfbad8d3b93544a02fd14937cc18dd/LARAVEL3_COASTERS">Enlace al repositorio</a>
+            <button class="videobutton" data-video="assets/videos/arrastrables.mp4">Ver video </button>
         </div>
     </div>
-    
+
 
                     <!-- Proyecto 8 -->
-    <div class="proyecto"> 
+    <div class="proyecto laravel react javascript"> 
         <h2>Laravel base datos colegio</h2>
         <img src="assets/proyectos/escuela.jpg" alt="colegio" />
         <p>Con esta aplicacion he creado un Backend con laravel que guarda diferentes usuarios, pueden ser usuarios o administradores.</p>
@@ -166,8 +182,24 @@
         </div>
     </div>
 
-                        <!-- Proyecto 9 -->
-    <div class="proyecto"> 
+
+                                    <!-- Proyecto 9 -->
+    <div class="proyecto springboot thymeleaf"> 
+        <h2>Sistema de gestion de tienda usuarios y administradores</h2>
+        <img src="assets/proyectos/springboot.png" alt="springboot" />
+        <p>Proyecto todavia en desarrollo mucho mas completo que el anterior que he desarrollado completamente en springboot, es una tienda en la que pueden iniciar sesion usuarios tanto usuaros como administradores.</p>
+       <p> Las vistas y las rutas a las que pueden acceder los usuarios y los administradores son diferentes, esto esta gestionado con Spring Security.</p>
+        <p>Por practicar a hacer un proyecto solamente con springboot, las vistas estan hechas con Thymeleaf, y la base de datos es una base de datos Mysql creada desde el propio Spring mediante las entidades</p>
+        <p>Tambien he practicado el uso de objetosDTO para el inicio de sesion y otras clases auxiliares, como el carrito que se guarda en la sesion de cada cliente, pero no se almacenan en la base de datos.</p>
+        <div class="proyecto-enlaces"> 
+           <!-- <a href="C:\xampp\htdocs\PROYECTOS_PERSONALES\LARAVEL2_COLEGIO_NOTAS/frontend-react/public/index.html/index.html">Enlace al proyecto</a><br><br> -->
+            <a href="https://github.com/Davidmarga/PROYECTOS_PERSONALES/tree/b42cab74fc3fe2a414d92ae2a63a9971c1004128/tiendaspringboot3-sinTerminar/tienda">Enlace al repositorio</a>
+        </div>
+
+ </div>
+
+                        <!-- Proyecto 10 -->
+    <div class="proyecto springboot javascript"> 
         <h2>Tienda de ordenadores</h2>
         <img src="assets/proyectos/springboot.png" alt="springboot" />
         <p>En este proyecto he creado una plataforma para una tienda de ordenadores muy simple, para practicar a hacer el backend con Springboot.</p>
@@ -181,20 +213,36 @@
         </div>
     </div>
 
-                                <!-- Proyecto 9 -->
-    <div class="proyecto"> 
-        <h2>Sistema de gestion de tienda usuarios y administradores</h2>
-        <img src="assets/proyectos/springboot.png" alt="springboot" />
-        <p>Proyecto todavia en desarrollo mucho mas completo que el anterior que he desarrollado completamente en springboot, es una tienda en la que pueden iniciar sesion usuarios tanto usuaros como administradores.</p>
-       <p> Las vistas y las rutas a las que pueden acceder los usuarios y los administradores son diferentes, esto esta gestionado con Spring Security.</p>
-        <p>Por practicar a hacer un proyecto solamente con springboot, las vistas estan hechas con Thymeleaf, y la base de datos es una base de datos Mysql creada desde el propio Spring mediante las entidades</p>
-        <p>Tambien he practicado el uso de objetosDTO para el inicio de sesion y otras clases auxiliares, como el carrito que se guarda en la sesion de cada cliente, pero no se almacenan en la base de datos.</p>
-        <div class="proyecto-enlaces"> 
-           <!-- <a href="C:\xampp\htdocs\PROYECTOS_PERSONALES\LARAVEL2_COLEGIO_NOTAS/frontend-react/public/index.html/index.html">Enlace al proyecto</a><br><br> -->
-            <a href="https://github.com/Davidmarga/PROYECTOS_PERSONALES/tree/b42cab74fc3fe2a414d92ae2a63a9971c1004128/tiendaspringboot3-sinTerminar/tienda">Enlace al repositorio</a>
-        </div>
 
- </div>
+
+                    <!-- Proyecto 11 -->
+    <div class="proyecto laravel react javascript"> 
+        <h2>Laravel ToDoList</h2>
+        <img src="assets/proyectos/todolist.jpg" alt="Todolist" />
+        <p>Aplicacion, consistente en una lista de tareas que se almacena en una base de datos.</p>
+        <p>El backend esta hecho en Laravel, almacena los datos en una base de datos Sql, y el frontend para practicar lo he hecho en React</p>
+        <p>Permite al usuario iniciar sesion, ver sus tareas, eliminarlas editarlas, o marcarlas como completadas. Al lado de cada tarea, aparece el usuario al que pertenece, cada usuario puede gestionar unicamente sus tareas</p>
+        <p>Al igual que la otra aplicacion en laravel, por problemas con los sitios de hosting gratuitos, que suspenden los servicios de react y de laravel, no lo he desplegado, pero dejo el enlace al repositorio de github</p>
+        <div class="proyecto-enlaces"> 
+            <!-- <a href="C:\xampp\htdocs\PROYECTOS_PERSONALES\LARAVEL/frontend_js/index.html">Enlace al proyecto</a><br><br> -->
+            <a href="https://github.com/Davidmarga/PROYECTOS_PERSONALES/tree/f84c2bd463e5cdceeb2c857f62693b18c7e504e4/LARAVEL">Enlace al repositorio</a>
+        </div>
+    </div>
+
+
+        <!-- Proyecto 12 -->
+    <div class="proyecto react php bootstrap"> 
+        <h2>Lista de videojuegos</h2>
+        <img src="assets/proyectos/videogames.jpg" alt="Videojuegos" />
+        <p>Aplicación que permite listar videojuegos, y guardarlos con una nota que pone el usuario.</p>
+        <p>El backend es sencillo y esta hecho en php, e interactua con una base de datos Sql.</p>
+        <p>Lo que he querido practicar con esta aplicacion, es a hacer un frontend mas moderno, con React y Bootstrap, y sobre todo practicar con las consultas a traves de una api, para comunicar el frontend con el backend.</p>       
+        <div class="proyecto-enlaces"> 
+            <a href="https://github.com/Davidmarga/PROYECTOS_PERSONALES/tree/11670417fbbfbad8d3b93544a02fd14937cc18dd/listajuegos">Enlace al repositorio</a>
+            <button class="videobutton" data-video="assets/videos/videogames.mp4">Ver video </button>
+        </div>
+    </div>
+
 </div>
 
 </div>
@@ -243,6 +291,20 @@
         video.pause();
         video.src='';
     });
+
+const filtro = document.getElementById('filtro');
+// no hace falta porque ya lo tenemos mas arriba, pero sin habria que hacer const proyectos = document.querySelectorAll('.proyecto');
+filtro.addEventListener('change', () => {
+    const valor = filtro.value;
+
+    proyectos.forEach(proyecto => {
+        if (valor === "todos" || proyecto.classList.contains(valor)) {
+            proyecto.style.display = "block";
+        }else {
+            proyecto.style.display = "none";
+        }
+    });
+});
 
 </script>
 

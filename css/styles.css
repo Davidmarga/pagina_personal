@@ -303,6 +303,19 @@ footer {
     font-size:0.85rem;
 }
 
+.filtro-lenguaje {
+    font-weight:700;
+    margin-bottom:12px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.filtro-lenguaje select {
+  padding: 6px 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+}
+
 .proyecto h2 {
     text-align: center;
 }
